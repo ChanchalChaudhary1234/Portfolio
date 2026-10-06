@@ -65,7 +65,7 @@ export default function Hero({ onExploreWork }) {
                 bg-[#f7f3eb] dark:bg-[#03060d]
             "
         >
-            {/* HERO IMAGE (100% Natural Top & Center) */}
+            {/* HERO IMAGE (Balanced for mobile & desktop views) */}
             <img
                 src={
                     darkMode
@@ -76,7 +76,8 @@ export default function Hero({ onExploreWork }) {
                 className="
                     absolute inset-0
                     h-full w-full
-                    object-cover object-center
+                    object-cover object-[80%_center] sm:object-center
+                    opacity-40 sm:opacity-100
                     transition-opacity duration-500
                     -z-20
                 "
@@ -86,10 +87,10 @@ export default function Hero({ onExploreWork }) {
             <div
                 className="
                     pointer-events-none absolute inset-x-0 bottom-0 z-[1]
-                    h-1/4
+                    h-1/3 sm:h-1/4
                     bg-gradient-to-t
-                    from-[#f7f3eb] via-[#f7f3eb]/60 to-transparent
-                    dark:from-[#03060d] dark:via-[#03060d]/50 dark:to-transparent
+                    from-[#f7f3eb] via-[#f7f3eb]/80 to-transparent
+                    dark:from-[#03060d] dark:via-[#03060d]/70 dark:to-transparent
                 "
             />
 
@@ -108,7 +109,7 @@ export default function Hero({ onExploreWork }) {
                                 mb-4 inline-flex w-fit items-center gap-2.5
                                 rounded-full
                                 border border-emerald-500/30
-                                bg-white/80 dark:bg-black/45 px-3.5 py-1.5
+                                bg-white/90 dark:bg-black/65 px-3.5 py-1.5
                                 text-xs font-medium
                                 text-emerald-800 dark:text-emerald-300
                                 backdrop-blur-md
@@ -156,7 +157,7 @@ export default function Hero({ onExploreWork }) {
                             }}
                             className="
                                 max-w-3xl
-                                text-4xl
+                                text-3xl
                                 font-extrabold
                                 tracking-tight
                                 text-slate-950
@@ -273,7 +274,7 @@ export default function Hero({ onExploreWork }) {
                                     border
                                     border-slate-300
                                     dark:border-white/15
-                                    bg-white dark:bg-black/45
+                                    bg-white/90 dark:bg-black/65
                                     px-6 py-3.5
                                     text-xs
                                     font-semibold
@@ -326,8 +327,8 @@ export default function Hero({ onExploreWork }) {
                                         border
                                         border-slate-300/80
                                         dark:border-white/10
-                                        bg-white/90
-                                        dark:bg-black/55
+                                        bg-white/95
+                                        dark:bg-black/70
                                         p-3.5
                                         shadow-sm
                                         backdrop-blur-md
