@@ -65,7 +65,7 @@ export default function Hero({ onExploreWork }) {
                 bg-[#f7f3eb] dark:bg-[#03060d]
             "
         >
-            {/* HERO IMAGE (Balanced for mobile & desktop views) */}
+            {/* HERO IMAGE */}
             <img
                 src={
                     darkMode
@@ -76,21 +76,21 @@ export default function Hero({ onExploreWork }) {
                 className="
                     absolute inset-0
                     h-full w-full
-                    object-cover object-[80%_center] sm:object-center
-                    opacity-40 sm:opacity-100
+                    object-cover object-[75%_20%] sm:object-center
+                    opacity-25 sm:opacity-100
                     transition-opacity duration-500
                     -z-20
                 "
             />
 
-            {/* BOTTOM CONTRAST GRADIENT OVERLAY (Provides depth and readability at the bottom/text area) */}
+            {/* BOTTOM CONTRAST GRADIENT OVERLAY */}
             <div
                 className="
                     pointer-events-none absolute inset-x-0 bottom-0 z-[1]
-                    h-1/3 sm:h-1/4
+                    h-2/3 sm:h-1/4
                     bg-gradient-to-t
-                    from-[#f7f3eb] via-[#f7f3eb]/80 to-transparent
-                    dark:from-[#03060d] dark:via-[#03060d]/70 dark:to-transparent
+                    from-[#f7f3eb] via-[#f7f3eb]/90 to-transparent
+                    dark:from-[#03060d] dark:via-[#03060d]/90 dark:to-transparent
                 "
             />
 
