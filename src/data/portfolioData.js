@@ -1,0 +1,193 @@
+export const navLinks = [
+    { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
+    { label: 'Career Tracks', href: '#career-tracks' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Contact', href: '#contact' },
+];
+
+const careerProfileNav = [
+    { label: 'Overview', id: 'profile-overview' },
+    { label: 'Skills', id: 'profile-skills' },
+    { label: 'Projects', id: 'profile-projects' },
+    { label: 'Contact', id: 'contact' }
+];
+
+export const heroStats = [
+    { value: '5+', label: 'Projects' },
+    { value: '4', label: 'Focus Areas' },
+    { value: '2+', label: 'Internships' },
+    { value: 'Open', label: 'to opportunities' },
+];
+
+export const roleProfiles = [
+    {
+        id: 'data-analyst',
+        title: 'Data Analyst',
+        icon: 'bar-chart',
+        color: '#3B82F6',
+        desc: 'Turn data into meaningful insights using SQL, Python and analytical thinking.',
+        tags: ['SQL', 'Python', 'Excel'],
+        badge: '1+ Projects',
+        status: 'ready',
+        tagline: 'Turning raw data into meaningful insights.',
+        subtext: 'I analyze data, find patterns, create reports and build dashboards that help in better decision making.',
+        stats: [
+            { label: 'Total Queries', value: '1.2k+' },
+            { label: 'Accuracy', value: '99.2%' },
+            { label: 'Insights Built', value: '150+' },
+        ],
+        skills: ['SQL', 'Excel', 'Python', 'Power BI', 'Data Analysis', 'EDA'],
+        featuredProject: {
+            title: 'Meta Ad Performance Dashboard',
+            desc: 'An interactive Power BI dashboard to analyze ad performance, audience insights and campaign efficiency.',
+            tags: ['Power BI', 'SQL', 'Marketing', 'KPI'],
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+        },
+        offerings: [
+            'Data Cleaning & Analysis',
+            'KPI Reporting',
+            'Interactive Dashboards',
+            'Business Insights',
+            'Automated Reporting',
+        ],
+    },
+    {
+        id: 'bi-analyst',
+        title: 'BI Analyst',
+        icon: 'activity',
+        color: '#10B981',
+        desc: 'Build interactive dashboards reports for data-driven decisions.',
+        tags: ['Power BI', 'SQL', 'DAX'],
+        badge: '1+ Dashboards',
+        status: 'ready',
+        tagline: 'Building dashboards for better decisions.',
+        subtext: 'I design interactive dashboards, reports and data models to help businesses track performance and find opportunities.',
+        stats: [
+            { label: 'Total Sales', value: '1.2M' },
+            { label: 'Total Customers', value: '1.2M' },
+            { label: 'Growth', value: '+12.5%' },
+        ],
+        skills: ['Power BI', 'SQL', 'DAX', 'Excel', 'Data Modeling', 'Visualization'],
+        featuredProject: {
+            title: 'Sales & Marketing Dashboard',
+            desc: 'A Power BI dashboard showing sales trends, regional performance and product insights.',
+            tags: ['Power BI', 'DAX', 'Business Intelligence'],
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        },
+        offerings: [
+            'Dashboard Design',
+            'Data Modeling',
+            'KPI Tracking',
+            'Business Reporting',
+            'Performance Analysis',
+        ],
+    },
+    {
+        id: 'data-scientist',
+        title: 'Data Scientist',
+        icon: 'trending-up',
+        color: '#8B5CF6',
+        desc: 'Work with data, build ML models and extract predictive insights.',
+        tags: ['Python', 'ML', 'Scikit-learn'],
+        badge: 'In Progress',
+        status: 'in-progress',
+        tagline: 'Finding patterns. Building predictions.',
+        subtext: 'I work with data to build machine learning models, explore patterns and create predictive solutions.',
+        stats: [
+            { label: 'Models Trained', value: '15+' },
+            { label: 'Accuracy Score', value: '94.8%' },
+            { label: 'Datasets Processed', value: '30+' },
+        ],
+        skills: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'ML', 'EDA'],
+        featuredProject: {
+            title: 'Student Performance Prediction',
+            desc: 'A machine learning model to predict student performance based on academic and personal factors.',
+            tags: ['Python', 'ML', 'Scikit-learn', 'Data Analysis'],
+            image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80',
+        },
+        offerings: [
+            'Predictive Modeling',
+            'Data Exploration',
+            'Model Evaluation',
+            'Real-world Problem Solving',
+            'Continuous Learning',
+        ],
+    },
+    {
+        id: 'python-developer',
+        title: 'Python Developer',
+        icon: 'code',
+        color: '#F59E0B',
+        desc: 'Build APIs, web applications and automation solutions.',
+        tags: ['FastAPI', 'Django', 'APIs'],
+        badge: 'In Progress',
+        status: 'in-progress',
+        tagline: 'Building real-world applications.',
+        subtext: 'I develop backend applications, APIs and automation tools using Python.',
+        stats: [
+            { label: 'API Endpoints', value: '45+' },
+            { label: 'Response Speed', value: '<50ms' },
+            { label: 'Scripts Built', value: '25+' },
+        ],
+        skills: ['Python', 'FastAPI', 'Django', 'APIs', 'Databases', 'Deployment'],
+        featuredProject: {
+            title: 'FastAPI Task Manager',
+            desc: 'A simple task management API built with FastAPI and PostgreSQL.',
+            tags: ['FastAPI', 'Python', 'PostgreSQL', 'API'],
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+        },
+        offerings: [
+            'API Development',
+            'Backend Systems',
+            'Automation Scripts',
+            'Database Integration',
+            'Deployment Support',
+        ],
+    },
+];
+
+export const projectsList = [
+    {
+        id: 1,
+        title: 'Meta Ad Performance Dashboard',
+        category: 'Power BI',
+        featured: true,
+        tags: ['Power BI', 'Marketing', 'KPI Analysis'],
+        desc: 'An interactive dashboard to analyze ad performance, audience insights and campaign efficiency.',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+        link: '#',
+    },
+    {
+        id: 2,
+        title: 'E-Commerce Sales Analysis',
+        category: 'Python',
+        featured: false,
+        tags: ['Python', 'EDA', 'Data Visualization'],
+        desc: 'Analyzed sales data to identify trends, top products and business growth opportunities.',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        link: '#',
+    },
+    {
+        id: 3,
+        title: 'Student Performance Prediction',
+        category: 'ML',
+        featured: false,
+        tags: ['Python', 'ML', 'Scikit-learn'],
+        desc: 'A machine learning model to predict student performance based on academic and personal factors.',
+        image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80',
+        link: '#',
+    },
+];
+
+export const techTools = [
+    { name: 'Python', icon: 'Terminal', color: '#38BDF8' },
+    { name: 'SQL', icon: 'Database', color: '#0284C7' },
+    { name: 'Power BI', icon: 'BarChart3', color: '#FACC15' },
+    { name: 'Excel', icon: 'FileSpreadsheet', color: '#22C55E' },
+    { name: 'Pandas', icon: 'Layers', color: '#6366F1' },
+    { name: 'NumPy', icon: 'Box', color: '#38BDF8' },
+    { name: 'Scikit-learn', icon: 'Cpu', color: '#FB923C' },
+    { name: 'Django', icon: 'Server', color: '#16A34A' },
+    { name: 'FastAPI', icon: 'Zap', color: '#14B8A6' },
+];
